@@ -1,0 +1,80 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: white;
+	background-color: black;
+}
+
+.ad-click {
+	cursor: pointer;
+}
+
+#Stage, #Video {
+	width: 300px;
+	height: 250px;
+}
+
+#Controls {
+	height: 50px;
+	width: 120px;
+	position: absolute;
+	top: 200px;
+	left: 0;
+	padding: 8px 5px;
+	z-index: 99999999;
+}
+
+.hide {
+	visibility: hidden;
+}
+
+.icon {
+	height: 25px;
+	width: 25px;
+	display: inline-block;
+}	
+
+.white.audio-stop {
+	background: url(../images/ic_volume_up_white_24dp.png) no-repeat;
+}
+
+.white.audio-start {
+	
+	background: url(../images/ic_volume_off_white_24dp.png) no-repeat;
+}
+
+.white.video-stop {
+	background: url(../images/ic_pause_circle_outline_white_24dp.png) no-repeat;
+}
+
+.white.video-start {
+	background: url(../images/ic_play_circle_outline_white_24dp.png) no-repeat;	
+}
+
+.white.restart {
+	background: url(../images/ic_replay_white_24dp.png) no-repeat;
+}	
+
+.black.audio-stop {
+	background: url(../images/ic_volume_up_black_24dp.png) no-repeat;
+}
+
+.black.audio-start {
+	
+	background: url(../images/ic_volume_off_black_24dp.png) no-repeat;
+}
+
+.black.video-stop {
+	background: url(../images/ic_pause_circle_outline_black_24dp.png) no-repeat;
+}
+
+.black.video-start {
+	background: url(../images/ic_play_circle_outline_black_24dp.png) no-repeat;	
+}
+
+.black.restart {
+	background: url(../images/ic_replay_black_24dp.png) no-repeat;
+}
