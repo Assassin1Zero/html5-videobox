@@ -12,12 +12,12 @@ body {
 	cursor: pointer;
 }
 
-#Stage, #Video {
+#VideoBox_Stage, #VideoBox_Video {
 	width: 300px;
 	height: 250px;
 }
 
-#Controls {
+#VideoBox_Controls {
 	height: 50px;
 	width: 120px;
 	position: absolute;
@@ -36,8 +36,8 @@ body {
 	width: 25px;
 	display: inline-block;
 	background-repeat: none;
-	background-image: url(spritesheet.png);
-}	
+	background-image: url(../images/spritesheet.png);
+}
 
 .white.audio-stop {
 	background-position: -107px -5px;
@@ -51,13 +51,13 @@ body {
 	background-position: -39px -5px;
 }
 
-.white.video-start {	
+.white.video-start {
 	background-position: -5px -39px;
 }
 
 .white.restart {
 	background-position: -73px -39px;
-}	
+}
 
 .black.audio-stop {
 	background-position: -73px -73px;
