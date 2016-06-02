@@ -1,4 +1,14 @@
-<link rel="stylesheet" href="styles.css" />
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 VideoBox</title>
+
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
 <div id="VideoBox_Stage">
 	<video id="VideoBox_Video" class="ad-click" width="300" height="250" preload="auto"></video>
 	<div id="Controls">
@@ -13,32 +23,34 @@
 
 	var videoBox = AdOps.videobox({
         stage: '#VideoBox_Stage',
-        video: '#VideoBox_Video',	
+        video: '#VideoBox_Video',
 		poster: 'poster.jpg',
 		media: 'video.mp4',
 		theme: 'white',
 		autoplay: true,
 		clickUrl: '[CLICK MACRO HERE]'
 	});
-	
+
 	videoBox.addEvent('ADOPS_VIDEOBOX_READY', function() {
-		
+
 		//Custom code goes here for ready event
 		console.log('VIDEOBOX READY');
 	});
-	
+
 	videoBox.addEvent('ADOPS_VIDEOBOX_STARTED', function() {
-		
+
 		//Custom code goes here for video start e.g 3rd party video counter
 		console.log('VIDEOBOX CONTENT STARTED');
-	});		
-	
+	});
+
 	videoBox.addEvent('ADOPS_VIDEOBOX_ENDED', function() {
-		
+
 		//Custom code goes here for video end e.g 3rd party video counter
 		console.log('VIDEOBOX CONTENT ENDED');
-	});	
-	
+	});
+
 	videoBox.init();
-	
+
 </script>
+</body>
+</html>
