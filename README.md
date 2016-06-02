@@ -5,7 +5,7 @@ We have supplied a working example using our videobox API. For basic usage you w
 Typically all files would be uploaded to your CDN and your traffickers would use
 the following iframe markup to traffic the ad. The poster and video files should be included in the HTML5 package and will be hosted on our CDN. Please refer to our specifications for file size restrictions.
 
-#### Example
+#### Example ad server markup
 
 ```
 #!html
@@ -18,9 +18,9 @@ the following iframe markup to traffic the ad. The poster and video files should
 Within the index.html file there are various configuration options that can be adjusted
 to change the behavior and appearance of the video box.
 
-The videobox API handles configuration of the HTML5 video tag and sets up
+The videobox API handles configuration of the HTML5 video tag and manages playback and muting audio until user interaction.
 
-The video box can be customized to show a static poster image before and after the video content plays.
+The video box can be customized to show a static 300x250 poster image before and after the video content plays.
 
 It is also possible to change the button theme from white to black, switch off autoplay and set an autoplay delay.
 
