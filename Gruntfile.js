@@ -20,30 +20,30 @@ module.exports = function(grunt) {
                 src: ['build']
             },
             post: {
-                src: ['build/js/main.js']
+                src: ['build/main.js']
             }
         },
         copy: {
         	build: {
         		files: [
         			{src: 'template.html', dest: 'build/index.html'},
-                    {src: 'css/**', dest: 'build/'},
-                    {src: 'js/**', dest: 'build/'},
-                    {src: 'images/**', dest: 'build/'},
-                    {src: 'media/**', dest: 'build/'},
+                    {expand: true, src: 'css/**', dest: 'build/', flatten: true, filter: 'isFile'},
+                    {expand: true, src: 'js/**', dest: 'build/', flatten: true, filter: 'isFile'},
+                    {expand: true, src: 'images/**', dest: 'build/', flatten: true, filter: 'isFile'},
+                    {expand: true, src: 'media/**', dest: 'build/', flatten: true, filter: 'isFile'},
         		]
         	}
         },
         uglify: {
             build: {
-                src: 'build/js/main.js',
-                dest: 'build/js/main.min.js'
+                src: 'build/main.js',
+                dest: 'build/main.min.js'
             }
         },
         browserify: {
             build: {
                 files: {
-                    'build/js/main.js': ['lib/**/*.js']
+                    'build/main.js': ['lib/**/*.js']
                 },
                 options: {
                     require: ['ad-utils'],
