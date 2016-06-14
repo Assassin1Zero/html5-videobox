@@ -12,6 +12,11 @@ the following iframe markup to traffic the ad. The poster and video files should
 <iframe src="http://your-cdn.com/demo-videobox/index.html?clickTag=[CLICK_MACRO_GOES_HERE]" height="250" width="300" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 
 ```
+#### Required assets
+
+Video file: Max 30 seconds, less then 2.2 Mb, encoded as MP4/H.264, dimensions 400x225 (16:9)
+Poster file: (Optional) JPEG, less then 50kb, dimensions 300x250
+
 
 #### Documentation
 

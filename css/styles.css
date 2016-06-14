@@ -10,21 +10,25 @@ body {
 
 .ad-click {
 	cursor: pointer;
-}
-
-#Stage, #Video {
 	width: 300px;
 	height: 250px;
 }
 
-#Controls {
+#VideoBox_Stage {
+	width: 300px;
+	height: 250px;
+	z-index: 1;
+}
+
+#VideoBox_Controls {
 	height: 50px;
 	width: 120px;
 	position: absolute;
 	top: 200px;
 	left: 0;
 	padding: 8px 5px;
-	z-index: 99999999;
+	z-index: 2;
+	display: block;
 }
 
 .hide {
@@ -37,7 +41,8 @@ body {
 	display: inline-block;
 	background-repeat: none;
 	background-image: url(spritesheet.png);
-}	
+	z-index: 3;
+}
 
 .white.audio-stop {
 	background-position: -107px -5px;
@@ -51,13 +56,13 @@ body {
 	background-position: -39px -5px;
 }
 
-.white.video-start {	
+.white.video-start {
 	background-position: -5px -39px;
 }
 
 .white.restart {
 	background-position: -73px -39px;
-}	
+}
 
 .black.audio-stop {
 	background-position: -73px -73px;
